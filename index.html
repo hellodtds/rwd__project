@@ -26,12 +26,14 @@
     </header>
 
     <nav id="drawer" class="nav">
+
       <ul class="nav__list nav-toggle">
         <li class="nav__item"><a href="#">News</a></li>
         <li class="nav__item"><a href="#">Events</a></li>
         <li class="nav__item"><a href="#">Culture</a></li>
         <li class="nav__item"><a href="#">Blog</a></li>
       </ul>
+            <span class="nav-toggle">close</span>
     </nav>
 
     <main>
@@ -189,10 +191,20 @@
       var trigram = document.querySelector("h1");
       var body = document.querySelector("body");
 
-      trigram.addEventListener("click", function(evt){
+      var toggle = document.querySelector(".nav-toggle");
+
+
+
+      // drawer.append("<div class='closeButton'>&#x2609;</div>");
+
+      toggle.addEventListener("click", function(evt){
         console.log("help");
-        drawer.classList.toggle('open');
+        body.classList.toggle('nav.open');
         evt.stopPropagation();
+      });
+
+      drawer.addEventListener("click", function(evt){
+        drawer.classList.remove('nav-toggle');
       });
 
     </script>
