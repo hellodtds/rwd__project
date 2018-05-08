@@ -83,9 +83,11 @@ ul {
  */
 
 .nav {
-  width: 800px;
+  /*width: 800px;*/
   margin-left: auto;
   margin-right: auto;
+
+  width: 100%;
 }
 
 .nav__list {
@@ -123,9 +125,11 @@ ul {
 
 main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  width: 800px;
-  margin-left: auto;
+  /*width: 800px;
+*/  margin-left: auto;
   margin-right: auto;
+
+  width: 100%;
 }
 
 /*
@@ -143,11 +147,13 @@ main {
 
 .hero {
   float: left;
-  width: 480px;
+  /*width: 480px;*/
   position: relative;
   background-image: url("./images/dog.jpg");
   background-size: cover;
   height: 300px;
+
+  width: 100%;
 }
 
 .hero article {
@@ -171,10 +177,12 @@ main {
 
 .top-news {
   float: right;
-  width: 320px;
+  /*width: 320px;*/
   height: 300px;
   border-bottom: 1px solid #E0E0E0;
   padding: 1em;
+
+  width: 100%;
 }
 
 .news__title {
@@ -216,9 +224,11 @@ main {
  */
 
 .scores {
-  width: 480px;
+  /*width: 480px;*/
   float: left;
   padding-top: 1em;
+
+  width: 100%;
 }
 
 .scores__table {
@@ -266,8 +276,10 @@ main {
 
 .weather {
   float: right;
-  width: 320px;
+  /*width: 320px;*/
   padding: 1em;
+
+  width: 100%;
 }
 
 .weather__location {
@@ -373,4 +385,39 @@ footer a {
   color: #333;
 }
 
+
+@media screen and (max-width: 960px) {
+
+  /* Menu */
+  .menu-icon .svg {
+    position: absolute;
+    top: 7%;
+    right: 3%;
+    width: 5%;
+    height: 5%;
+  }
+
+  /* Show/Hide Nav */
+
+  .close-menu {
+      transform: translateX(-100%);
+
+  }
+
+  .open-menu {
+      transform: translateX(0);
+
+  }
+}
+
+
+@media screen and (min-width: 961px) {
+
+  /* Menu */
+  .menu-icon .svg {
+    display: none;
+  }
+
+
+}
 
